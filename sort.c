@@ -3,7 +3,7 @@
 // function to copy array so original array is not modified
 int *getArrayCopy(int *array, int size)
 {
-    int *arrayCopy = (int *)malloc(size);
+    int *arrayCopy = (int *)malloc(size * sizeof(array[0]));
     for (int i = 0; i < size; i++)
     {
         arrayCopy[i] = array[i];
